@@ -1,4 +1,4 @@
-#  Quizzler
+#  Calculator
 
 Calculator, similar to the standard MacOS application
 
