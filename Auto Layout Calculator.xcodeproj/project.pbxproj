@@ -12,16 +12,18 @@
 		FF5FDF3B22A05E5F0059E08E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5FDF3922A05E5F0059E08E /* Main.storyboard */; };
 		FF5FDF3D22A05E620059E08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5FDF3C22A05E620059E08E /* Assets.xcassets */; };
 		FF5FDF4022A05E620059E08E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5FDF3E22A05E620059E08E /* LaunchScreen.storyboard */; };
+		FFB5E05A22CB4E1600100FB4 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB5E05922CB4E1600100FB4 /* CalculatorLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF5FDF3222A05E5F0059E08E /* Auto Layout Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF5FDF3522A05E5F0059E08E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF5FDF3722A05E5F0059E08E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF5FDF3722A05E5F0059E08E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		FF5FDF3A22A05E5F0059E08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF5FDF3C22A05E620059E08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF5FDF3F22A05E620059E08E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF5FDF4122A05E620059E08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB5E05922CB4E1600100FB4 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorLogic.swift; path = ../CalculatorLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,38 @@
 			isa = PBXGroup;
 			children = (
 				FF5FDF3522A05E5F0059E08E /* AppDelegate.swift */,
-				FF5FDF3722A05E5F0059E08E /* ViewController.swift */,
-				FF5FDF3922A05E5F0059E08E /* Main.storyboard */,
+				FFB5E05C22CB4E3A00100FB4 /* Controller */,
+				FFB5E05D22CB4E5600100FB4 /* View */,
 				FF5FDF3C22A05E620059E08E /* Assets.xcassets */,
 				FF5FDF3E22A05E620059E08E /* LaunchScreen.storyboard */,
 				FF5FDF4122A05E620059E08E /* Info.plist */,
+				FFB5E05B22CB4E2600100FB4 /* Model */,
 			);
 			path = "Auto Layout Calculator";
+			sourceTree = "<group>";
+		};
+		FFB5E05B22CB4E2600100FB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5E05922CB4E1600100FB4 /* CalculatorLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFB5E05C22CB4E3A00100FB4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FF5FDF3722A05E5F0059E08E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFB5E05D22CB4E5600100FB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF5FDF3922A05E5F0059E08E /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			files = (
 				FF5FDF3822A05E5F0059E08E /* ViewController.swift in Sources */,
 				FF5FDF3622A05E5F0059E08E /* AppDelegate.swift in Sources */,
+				FFB5E05A22CB4E1600100FB4 /* CalculatorLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakovanet.Auto-Layout-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakovanet.Auto-Layout-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
